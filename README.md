@@ -32,9 +32,9 @@ Steps to open the project:-
 
 # Login Credentials
 
-1.For admin Username: minor  Password: minor
+1.For admin Username: minor  & Password: minor
 
-2.For Staff Username: mansivats  Password: mansi123
+2.For Staff Username: mansivats  & Password: mansi123
 
-3.For Student Username: aadityapandey Password: aadi1234
+3.For Student Username: aadityapandey & Password: aadi1234
 
