@@ -28,3 +28,13 @@ Steps to open the project:-
 2.go to terminal and write cd cllg
 
 3.then write a command py manage.py runserver
+
+
+# Login Credentials
+
+1.For admin Username: minor  Password: minor
+
+2.For Staff Username: mansivats  Password: mansi123
+
+3.For Student Username: aadityapandey Password: aadi1234
+
