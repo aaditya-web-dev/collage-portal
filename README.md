@@ -25,6 +25,6 @@ Steps to open the project:-
 
 1.Go to Visual Studio Code
 
-2.go to terminal and write cd
+2.go to terminal and write cd cllg
 
 3.then write a command py manage.py runserver
