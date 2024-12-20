@@ -1,6 +1,3 @@
-# DJANGO college_management_system
-This is a Student Attendance System Developed for Educational Purpose using Python (Django).
-
 # Features Of Project
 1.Manage Teachers
 
