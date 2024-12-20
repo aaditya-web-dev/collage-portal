@@ -1,0 +1,10 @@
+code editor-Visual Studio Code (VS Code) or PyCharm
+
+Python 
+
+Django
+
+Jazzmin
+
+Pillow     
+
