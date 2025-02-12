@@ -5,11 +5,8 @@
 
 3.Manage Attendance
 
-4.Manage Marks
 
-5.Manage Time Table
-
-6.Login/Logout System
+4.Login/Logout System
 
 # Requirements:-
 
