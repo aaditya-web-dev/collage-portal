@@ -1,0 +1,36 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2> 
+      <form method="post" action="{% url 'save' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="user-box">
+          <input type="number" name="eno" id="eno" required="" />
+          <label>enrollment no</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="name" id="name" required="" />
+          <label>name</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="specialization" id="specialization" required="" />
+          <label>specialization</label>
+        </div>
+        <div class="user-box">
+          <input type="file" name="file" id="file" required="" />
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" value="submit now"></input>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'css/student4.css' %}" />
+    </head>
+    <body>
+    <div class="logo">
+      <img src="https://www.bciit.ac.in/images/logo/logo.png" width=100% height=100% >
+      <h1>Students details <a href="{% url 'home' %}"><button>HOME</button></a></h1>
+    </div>
+    <center>
+    {%if students %}
+    <table border=4>
+       <thead class="table-light"> 
+        <th>Image</th>
+        <th>Enrollment no</th>
+        <th>Name</th>
+        <th>Specialization</th>
+       </thead>
+       <tbody>
+        {% for emp in students%}
+        <tr>
+         <td><div class="profile-img"><img src="{{emp.image.url}}"></div></td>
+         <td>{{emp.eno}}</td>
+         <td>{{emp.name}}</td>
+         <td>{{emp.specialization}}</td>
+        </tr>
+        {%endfor%}
+       </tbody>
+    </table>
+    {%else%}
+    <p>no record found</p>
+    {%endif%}
+
+    <div class="login-box">
+      <form>
+        <a href="/button/">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Add more record
+        </a>
+      </form>
+    </div>
+        
+        
+        
+  </body>
+</html>

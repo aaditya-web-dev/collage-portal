@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/events.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://www.bciit.ac.in/images/logo/logo.png" width="100%" />
+      <h1>EVENTS OF BCIIT <a href="{% url 'home' %}"><button><h2>HOME</h2></button></a></h1>
+      <marquee>
+        <div class="wrapper">
+          <div class="card"><div class="profile-img"><img src="{% static 'image/e1.png' %}" /></div></div>
+          <div class="card"><div class="profile-img"><img src="{% static 'image/e3.png' %}" /></div></div>
+          <div class="card"><div class="profile-img"><img src="{% static 'image/e3.png' %}" /></div></div>
+          <div class="card"><div class="profile-img"><img src="{% static 'image/e4.png' %}" /></div></div></div>
+      </marquee>
+
+      <marquee direction="right">
+      <div class="wrapper">
+        <div class="card"><div class="profile-img"><img src="{% static 'image/e5.png' %}" /></div></div>
+        <div class="card"><div class="profile-img"><img src="{% static 'image/e6.png' %}" /></div></div>
+        <div class="card"><div class="profile-img"><img src="{% static 'image/e7.png' %}" /></div></div>
+        <div class="card"><div class="profile-img"><img src="{% static 'image/e1.png' %}" /></div></div>
+      </div>
+    </marquee>
+    </div>
+  </body>
+</html>

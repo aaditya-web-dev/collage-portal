@@ -1,0 +1,28 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/teach.css' %}" />
+  </head>
+  <body >
+    <div class="container">
+      <div class="profile-box">
+        {%if data %}
+        {% for e in data%}
+        <h3>{{e.name}}</h3><br/>
+        <img src="{{e.image.url}}">
+        <table>
+          <tr><td>Name:</td><td>{{e.name}}</td></tr>
+          <tr><td>Designation:</td><td>{{e.Designation}}</td></tr>
+          <tr><td>Subject:</td><td>{{e.subject}}</td></tr>
+          <tr><td>Educational Qualification:</td><td>{{e.education}}</td></tr>
+          <tr><td>Teaching/Research Experience:</td><td>{{e.exp}}</td></tr>
+          {%endfor%}
+        </table>
+        {%else%}
+        <p>no record found</p>
+        {%endif%}
+        <a href="{% url 'pro' %}"><button><h1>HOME</h1></button></a>
+      </div>
+    </div>
+  </body>
+</html>
